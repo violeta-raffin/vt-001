@@ -1,0 +1,106 @@
+extends /master.pug
+block content
+	- var currentUrl = 'buttons-group.html'
+	section
+		.container-fluid
+			.row
+				.col-md-12
+					.row
+						.col-lg-2.col-sm-3.pull-lg-9.pull-md-8
+							//- SIDEBAR
+							include ../includes/sidebar.pug
+						.col-lg-10.col-sm-9.push-lg-3.push-md-4.theme-docs.code-no-bs
+							h1 Bootstrap 4 components
+							hr
+							// Button Group
+							h4 Button Grpup
+								small 
+									a(href='href="https://getbootstrap.com/docs/4.1/components/button-group/' target='_blank') (Official docs)
+							p
+								| Group a series of buttons together on a single line with the button group 
+								small
+									code .btn-group
+							br
+							h4.mt-2 Default buttons
+							.panel
+								.panel-body
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-secondary(type='button') Left
+										button.btn.btn-secondary(type='button') Middle
+										button.btn.btn-secondary(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-primary(type='button') Left
+										button.btn.btn-primary(type='button') Middle
+										button.btn.btn-primary(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-success(type='button') Left
+										button.btn.btn-success(type='button') Middle
+										button.btn.btn-success(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-info(type='button') Left
+										button.btn.btn-info(type='button') Middle
+										button.btn.btn-info(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-warning(type='button') Left
+										button.btn.btn-warning(type='button') Middle
+										button.btn.btn-warning(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-danger(type='button') Left
+										button.btn.btn-danger(type='button') Middle
+										button.btn.btn-danger(type='button') Right
+								.panel-footer
+									pre
+										code.html.hljs.xml
+											| <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Basic example"</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Left<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Middle<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											| <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+											| <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Basic example"</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Left<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Middle<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											| <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+							br
+							h4.mt-2 Outline buttons
+							.panel
+								.panel-body
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-outline-secondary(type='button') Left
+										button.btn.btn-outline-secondary(type='button') Middle
+										button.btn.btn-outline-secondary(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-outline-primary(type='button') Left
+										button.btn.btn-outline-primary(type='button') Middle
+										button.btn.btn-outline-primary(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-outline-success(type='button') Left
+										button.btn.btn-outline-success(type='button') Middle
+										button.btn.btn-outline-success(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-outline-info(type='button') Left
+										button.btn.btn-outline-info(type='button') Middle
+										button.btn.btn-outline-info(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-outline-warning(type='button') Left
+										button.btn.btn-outline-warning(type='button') Middle
+										button.btn.btn-outline-warning(type='button') Right
+									.btn-group.m-1(role='group', aria-label='Basic example')
+										button.btn.btn-outline-danger(type='button') Left
+										button.btn.btn-outline-danger(type='button') Middle
+										button.btn.btn-outline-danger(type='button') Right
+								.panel-footer
+									pre
+										code.html.hljs.xml
+											| <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Basic example"</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-secondary"</span>&gt;</span>Left<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-secondary"</span>&gt;</span>Middle<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-secondary"</span>&gt;</span>Right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											| <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+											| <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Basic example"</span>&gt;</span>
+											|  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-primary"</span>&gt;</span>Left<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-primary"</span>&gt;</span>Middle<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											|  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-primary"</span>&gt;</span>Right<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+											| <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+							br
+							

@@ -1,0 +1,594 @@
+// General Styles -
+// Alerts
+//-------------------------------------------------
+.alert
+	border-color: #ffffff
+	border-radius: 0
+	font-family: $font2
+	.alert-heading
+		font-size: 3rem
+		font-family: $font1
+	p
+		font-family: $font3
+		font-size: 1rem
+	.alert-link
+		color: $dark
+		font-family: $font1
+		font-size: 1.4rem
+.alert-primary
+	color: $primary
+	background-color: $liprimary
+	border-bottom: 1px solid $primary
+	hr
+		border-top: 1px solid $primary
+.alert-secondary
+	color: $secondary
+	background-color: $lisecondary
+	border-bottom: 1px solid $secondary
+	hr
+		border-top: 1px solid $secondary
+.alert-success
+	color: $success
+	background-color: $lisuccess
+	border-bottom: 1px solid $success
+	hr
+		border-top: 1px solid $success
+.alert-danger
+	color: $danger
+	background-color: $lidanger
+	border-bottom: 1px solid $danger
+	hr
+		border-top: 1px solid $danger
+.alert-warning
+	color: $warning
+	background-color: $liwarning
+	border-bottom: 1px solid $warning
+	hr
+		border-top: 1px solid $warning
+.alert-info
+	color: $info
+	background-color: $liinfo
+	border-bottom: 1px solid $info
+	hr
+		border-top: 1px solid $info
+.alert-light
+	color: $dark
+	background-color: $light
+	border-bottom: 1px solid $dark
+	hr
+		border-top: 1px solid $light
+.alert-dark
+	color: #eaeaea
+	background-color: $dark
+	border-bottom: 1px solid $dark
+	hr
+		border-top: 1px solid $dark
+
+// Badges
+//-------------------------------------------------
+.badge
+	padding: 8px
+	font-size: 85%
+	border-radius: 1px
+	margin: 3px
+	font-family: $font2
+.badge-primary,.btn-primary
+	color: $primary
+	background-color: $liprimary
+	border-bottom: 1px solid $primary
+	hr
+		border-top: 1px solid $primary
+.badge-secondary,.btn-secondary
+	color: $secondary
+	background-color: $lisecondary
+	border-bottom: 1px solid $secondary
+	hr
+		border-top: 1px solid $secondary
+.badge-success,.btn-success
+	color: $success
+	background-color: $lisuccess
+	border-bottom: 1px solid $success
+	hr
+		border-top: 1px solid $success
+.badge-danger,.btn-danger
+	color: $danger
+	background-color: $lidanger
+	border-bottom: 1px solid $danger
+	hr
+		border-top: 1px solid $danger
+.badge-warning,.btn-warning
+	color: $warning
+	background-color: $liwarning
+	border-bottom: 1px solid $warning
+	hr
+		border-top: 1px solid $warning
+.badge-info,.btn-info
+	color: $info
+	background-color: $liinfo
+	border-bottom: 1px solid $info
+	hr
+		border-top: 1px solid $info
+.badge-light,.btn-light
+	color: $dark
+	background-color: $light
+	border-bottom: 1px solid $dark
+	hr
+		border-top: 1px solid $light
+.badge-dark,.btn-dark
+	color: $dark
+	background-color: #eaeaea
+	border-bottom: 1px solid $dark
+	hr
+		border-top: 1px solid $dark
+.badge-pill, .btn-pill
+	padding: 8px
+	border-radius: 15px
+	border: 0
+.badge-outline 
+	background-color: transparent
+
+
+// Breadcrum
+//-------------------------------------------------
+.breadcrumb
+	border-radius: 0
+	background-color: $basic
+	border-bottom: 1px solid $medium
+	.breadcrumb-item
+		a
+			color: $medium
+		&:before
+			content: "• "
+			color: $medium
+	.active
+		color: $strong
+		&:before
+			content: "• "
+			color: $medium
+// Buttons
+//-------------------------------------------------
+.btn
+	border-radius: 0
+	font-family: $font2
+	font-weight: 500
+	border-color: transparent
+	margin: 10px
+
+
+
+
+
+.btn-lg
+	font-size: 2rem	
+.btn-sm
+	font-size: 1rem
+//-------------------------------------------------
+.btn-primary
+	@include custom-btn($primary)
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+	background-color: #000000
+	color: #ffffff
+	border: 1px solid #ffffff
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $primary
+
+.btn-secondary
+	@include custom-btn($secondary)
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle
+	background-color: #ffffff
+	color: $secondary
+	border: 1px solid $secondary
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $secondary
+
+.btn-success
+	@include custom-btn($success)
+.btn-success:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle
+	background-color: #ffffff
+	color: $success
+	border: 1px solid $success
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $success
+
+.btn-info
+	@include custom-btn($info)
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle
+	background-color: #000000
+	color: #ffffff
+	border: 1px solid #ffffff
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $info
+
+.btn-warning
+	@include custom-btn($warning)
+.btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show>.btn-warning.dropdown-toggle
+	background-color: #000000
+	color: #ffffff
+	border: 1px solid #ffffff
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $warning
+
+.btn-danger
+	@include custom-btn($danger)
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle
+	background-color: #000000
+	color: #ffffff
+	border: 1px solid #ffffff
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $danger
+
+.btn-light
+	@include custom-btn($dark)
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle
+	background-color: red
+	color: #000000
+	border: 1px solid #000000
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $light
+
+.btn-dark
+	@include custom-btn($dark)
+	box-shadow: 2px 2px #000000
+	font-size: 1.2rem
+	padding: 1px 30px
+	&:hover,&:focus,&:active
+		color: $light
+		background: #000000
+		border: 1px solid #000000
+		box-shadow: 1px 1px #000000
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle
+	background-color: red
+	color: #000000
+	border: 1px solid #000000
+	&:focus,&:active
+		box-shadow: 0 0 0 0.1rem $dark
+
+		
+
+//-------------------------------------------------btn-outline
+.btn-outline-primary,.btn-pill-primary
+	@include btn-outline($primary)
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+	background-color: $primary
+	color: #ffffff
+	border: 1px solid $primary
+	
+.btn-outline-secondary,.btn-pill-secondary
+	@include btn-outline($secondary)
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle
+	background-color: $secondary
+	color: #ffffff
+	border: 1px solid $secondary
+
+.btn-outline-success,.btn-pill-success
+	@include btn-outline($success)
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle
+	background-color: $success
+	color: #ffffff
+	border: 1px solid $success
+
+.btn-outline-danger,.btn-pill-danger
+	@include btn-outline($danger)
+.btn-outline-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle
+	background-color: $danger
+	color: #ffffff
+	border: 1px solid $danger
+
+.btn-outline-warning,.btn-pill-warning
+	@include btn-outline($warning)
+.btn-outline-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show>.btn-warning.dropdown-toggle
+	background-color: $warning
+	color: #ffffff
+	border: 1px solid $warning
+
+.btn-outline-info,.btn-pill-info
+	@include btn-outline($info)
+.btn-outline-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle
+	background-color: $info
+	color: #ffffff
+	border: 1px solid $info
+
+.btn-outline-light,.btn-pill-light
+	color: $dark
+	border: 1px solid $dark
+	box-shadow: 2px 2px $dark
+	font-size: 1.2rem
+	padding: 1px 15px
+	&:hover,&:focus,&:active
+		color: $dark
+		background: $light
+		border: 1px solid $dark
+		box-shadow: 1px 1px $light
+.btn-outline-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle
+	background-color: $light
+	color: $light
+	border: 1px solid $light
+
+.btn-outline-dark,.btn-pill-dark
+	@include btn-outline($dark)
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle
+	background-color: $dark
+	color: $light
+	border: 1px solid $dark
+//-------------------------------------------------
+.btn-sm
+	font-size: 0.9rem
+	padding: 3px 40px
+.btn-lg
+	font-weight: 700
+	font-size: 1.5rem
+	padding: 12px 30px	
+//-------------------------------------------------btn-pill
+.btn-pill
+	background-color: #ffffff
+	border-radius: 30px
+	font-size: 1.2rem
+
+.btn-link
+	font-family: $font1
+	background: transparent
+	font-size: 1.4rem
+	border-bottom: 1px solid transparent
+	border-top: 1px solid transparent
+	padding: 0
+	@include transition(.5s)
+	&:hover,&:focus,&:active
+		text-decoration: none
+		color: $primary-color
+		border-bottom: 1px solid $primary-color
+		border-top: 1px solid $primary-color
+
+// Button Grpup
+//-------------------------------------------------
+// Cards
+//-------------------------------------------------
+.card
+	padding: 10px
+	border-radius: 0
+	border: 1px solid $primary-color-l
+	background-color: transparent
+	padding: 0
+	.card-img
+		border-radius: 0
+	.card-img-top
+		border-radius: 0
+		transition: all .5s ease 0s
+		&:hover
+			cursor: pointer
+	.card-img-overlay
+		top: auto
+	.card-header
+		text-align: center
+		background-color: $basic
+		border-bottom: 0
+	.card-footer
+		border-top: 1px solid $secondary-color
+		background-color: $basic
+	.card-body
+		border: 0
+		color: #000000
+		background-color: #ffffff
+		text-align: center
+		margin: 1px
+		.card-title
+			color: $primary-color
+			font-family: $font1
+			font-size: 2.3rem
+			border-bottom: 1px solid $primary-color
+		.card-text
+			font-family: $font2
+		.card-list
+			li
+				border-bottom: 1px solid #ccc
+				text-align: center
+				padding: 10px 5px
+		.card-link
+			background: transparent
+			font-size: 1.4rem
+			border-bottom: 1px solid transparent
+			border-top: 1px solid transparent
+			@include transition(.5s)
+			&:hover
+				color: $primary-color
+				border-bottom: 1px solid $primary-color
+				border-top: 1px solid $primary-color
+
+	.list-group-item
+		text-align: center
+
+// Placeholder
+//-------------------------------------------------
+$placeholder: $medium
+.form-control::-webkit-input-placeholder
+	color: $placeholder
+.form-control:-moz-placeholder
+	color: $placeholder
+.form-control::-moz-placeholder
+	color: $placeholder
+.form-control:-ms-input-placeholder
+	color: $placeholder
+.form-control::-ms-input-placeholder
+	color: $placeholder
+
+// Carousel
+//------------------------------------------------
+// Collapse
+//-------------------------------------------------	
+// Dropdown
+//-------------------------------------------------	
+.dropdown
+	.dropdown-toggle
+		&:active
+			box-shadow: 0 0 0 transparent
+	.dropdown-menu
+		padding: 10px
+		margin-top: 13px
+		border-radius: 0
+		border: 1px solid $primary-color
+		.dropdown-item
+			color: #000000
+			font-size: 1.3rem
+			text-align: center
+			border-bottom: 1px solid $primary-color
+			&:hover
+				color: #ffffff
+				background-color: $primary-color-l
+
+	.btn:not(:disabled):not(.disabled):active,.btn:not(:disabled):not(.disabled):focus
+		box-shadow: 0 0 0 transparent !important
+		background: #ffffff !important
+		color: #000 !important
+
+	
+// Layout
+//-------------------------------------------------	
+
+// Forms
+//-------------------------------------------------
+.input-group
+	input,.input-group-text
+		border-radius: 0
+		border: 1px solid $primary-color
+	.input-group-text
+		color: #000000
+		background-color: $basic
+.form-control
+	border-radius: 0
+	border-color: $primary-color
+	&:focus
+		border-color: $primary-color-l
+
+input.line-input
+	background: 0
+	border: 0
+	border-bottom: 1px solid #ffffff
+	border-left: 1px solid #ffffff
+	box-shadow: 0 0 transparent
+	color: #fff !important
+
+.form-group
+	color: $strong
+	input, textarea
+		border-bottom: 1px solid $strong
+	.form-control
+		color: $primary-color
+		border-bottom: 1px solid $primary-color
+.custom-file-label,.custom-select
+	border-radius: 0
+
+.custom-checkbox,.custom-radio 
+	.custom-control-label::before
+		background-color: $primary-color
+	.custom-control-input:checked~.custom-control-label::before
+		background-color: $primary-color-l
+
+	
+// Nav
+//-------------------------------------------------
+.nav
+	.nav-item a
+		color: $primary-color
+		font-size: 1.2rem
+.nav-pills
+	.nav-link
+		border-radius: 30px
+		border: 1px solid $primary-color
+		margin: 3px
+	.nav-link.active
+		background-color: $primary-color
+	.nav-link.dropdown-toggle
+		background-color: $secondary-color
+	.nav-link.disabled
+		background-color: $secondary-color
+		color: #ffffff
+		border: 0
+//-------------------------------------------------
+// Form
+//-------------------------------------------------	
+// Input Group
+//-------------------------------------------------	
+// List Group
+//-------------------------------------------------	
+.list-group
+	text-align: center
+	.list-group-item
+		color: $dark
+		font-size: 1.2rem
+		border-radius: 0
+		border-bottom: 1px solid $dark
+		border-right: 0
+		border-left: 0
+	.list-group-item-primary
+		background-color: $liprimary
+	.list-group-item-secondary
+		background-color: $lisecondary
+	.list-group-item-success
+		background-color: $lisuccess
+	.list-group-item-info
+		background-color: $liinfo
+	.list-group-item-warning
+		background-color: $liwarning
+	.list-group-item-danger
+		background-color: $lidanger
+	.active
+		color: #ffffff
+		border-color: $primary-color
+		background-color: $primary-color
+
+// Modal
+//-------------------------------------------------	
+// Navs
+//-------------------------------------------------	
+// NavBar
+//-------------------------------------------------
+
+// Progress
+//-------------------------------------------------
+.progress
+	background-color: $basic
+	border-radius: 3rem
+	.progress-bar
+		font-family: $font1
+		font-size: .6rem
+		background-color: $primary-color-l
+		.bg-success 
+    		background-color: $success
+		.bg-info 
+    		background-color: $info
+		.bg-warning 
+    		background-color: $warning
+		.bg-danger 
+    		background-color: $danger
+
+
+// Jumbotron
+//-------------------------------------------------
+.jumbotron
+	background-color: $basic
+    border-radius: 0
+	.display-4
+		color: $primary-color
+
+// Table
+//-------------------------------------------------
+.table 
+	th
+		color: $primary-color
+	.thead-light th
+		color: $primary-color
+		background-color: $secondary-color
+		border-color: $secondary-color
+.table td, .table th,.table-dark thead th
+	border-top: 1px solid $primary-color
+.table thead th
+	border-bottom: 1px solid $primary-color
+.thead-dark th
+	color: #ffffff
+	font-size: 1.2rem
+	background-color: $primary-color
+	border-color: $primary-color
+.table-dark
+	border-color: $primary-color
+	background-color: $secondary-color
+
+

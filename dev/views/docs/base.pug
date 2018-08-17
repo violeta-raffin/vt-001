@@ -1,0 +1,46 @@
+extends /master.pug
+block content
+	- var currentUrl = 'navs.html'
+	section
+		.container-fluid
+			.row
+				.col-md-12
+					.row
+						.col-lg-2.col-sm-3.pull-lg-9.pull-md-8
+							//- SIDEBAR
+							include ../includes/sidebar.pug
+						.col-lg-10.col-sm-9.push-lg-3.push-md-4.theme-docs.code-bs
+							h1 Bootstrap 4 components
+							hr
+							// Navs
+							h4 Navs
+								small 
+									a(href='https://getbootstrap.com/docs/4.1/components/navs/' target='_blank') (Official docs)
+							//- ////////////////////////////////////////////////////////////////////////////
+							h4 Base nav
+							p 
+								| Navigation available in Bootstrap share general markup and styles, from the base .nav class to the active and disabled states. Swap modifier classes to switch between each style.
+								
+							.panel
+								//- Visual
+								.panel-body
+									nav.nav
+										a.nav-link.active(href="#") Active
+										|   
+										a.nav-link(href="#") Link
+										|   
+										a.nav-link(href="#") Link
+										|   
+										a.nav-link.disabled(href="#") Disabled
+
+								//- Codigo
+								.panel-footer
+									pre
+										code.code-custom
+											| &lt;nav class="nav"&gt;
+											|   &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+											|   &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+											|   &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+											|   &lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+											| &lt;/nav&gt;
+						//- ////////////////////////////////////////////////////////////////////////////
