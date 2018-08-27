@@ -30,7 +30,8 @@ We include a few plugins, only the necessary to look nice, but not getting too c
 
 ## Advanced Usage
 
->After installation, run `npm install` and then run `gulp` to watch the changes in dist foled.
+>After installation, run `npm install` and then run `gulp` to watch the changes in dist folder.
+You must have installed nodejs in your computer.
 We include browsersync in gulp config to see changes in real time when files are saved. Also include plumber and another nice stuff.
 You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 ## Preprocessors (Dev)
